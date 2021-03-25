@@ -1,0 +1,89 @@
+.wrapper{
+    height: 200px;
+    width: 200px;
+    position: relative;
+    border: 5px solid #fff;
+    border-radius: 50%;
+    background-size: 100% 100%;
+    margin: 100px auto;
+    overflow: hidden;
+}
+.my_file{
+    position: absolute;
+    top: 45px;
+    right: -10px;
+    outline: none;
+    color: transparent;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 1px 70px;
+    cursor: pointer;
+    transition: 0.5s;
+    /* background: rgb(0, 0, 0, 0.5); */
+    opacity: 0;
+}
+
+.my_file::-webkit-file-upload-button{
+    visibility: hidden;
+}
+.my_file::before
+{
+    content: '\f030';
+    font-family: fontAwesome;
+    font-size: 50px;
+    color: #fff;
+    display: inline-block;
+    -webkit-user-select: none;
+}
+
+.my_file:hover{
+    opacity: 1;
+}
+
+.image{
+    position: absolute;
+    top: 45px;
+    /* left: -130px; */
+    outline: none;
+    color: transparent;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 1px 70px;
+    cursor: pointer;
+    transition: 0.5s;
+    /* background: rgb(0, 0, 0, 0.5); */
+    opacity: 0;
+}
+
+
+.image::-webkit-file-upload-button{
+    visibility: hidden;
+}
+.image::before
+{
+    content: '\f030';
+    font-family: fontAwesome;
+    font-size: 50px;
+    color: #fff;
+    display: inline-block;
+    -webkit-user-select: none;
+}
+
+.image:hover{
+    opacity: 1;
+}
+
+
+
+.card-image {
+    /* max-width: 180px; */
+    /* right: 20px; */
+    position: relative;
+
+    
+}
+
+.card-image img{
+    width: 180px;
+   
+}
